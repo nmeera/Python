@@ -15,3 +15,10 @@ print tabby_cat
 print persian_cat
 print backslash_cat
 print fat_cat 
+
+###################################################
+# here I am using "\r" > Carrige Return(CR)
+# press Ctrl+c to come out of loop. 
+while True:
+	for i in ["/","-","|","\\","|"]:
+		print "%s\r" %i,
