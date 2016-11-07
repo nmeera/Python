@@ -8,8 +8,8 @@ dct = dict()
 lst = list()
 for ln in fh:
 	if ln.startswith('From '):
-		ln = ln.split()
-		ln = ln[5].split(':')
+		ln = ln.split()  #spliting the string by space
+		ln = ln[5].split(':') # here taking hours string/word from above line/split and splitting the string a second time using a colon.
 		dct[ln[0]] = dct.get(ln[0],0) + 1
 
 #t = dct.items()
