@@ -1,4 +1,4 @@
-# Using re.search() like startswith()
+#Using re.search() like startswith()
 import re
 hand  = open('mbox-short.txt')
 
