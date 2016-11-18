@@ -1,0 +1,5 @@
+X-Sieve: CMU Sieve 2.3 
+X-DSPAM-Result: Innocent
+X-DSPAM-Confidence: 0.8475
+X-Plane is behind schedule: two weeks
+X-Content-Type-Message-Body: text/plain

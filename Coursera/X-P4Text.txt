@@ -1,6 +1,0 @@
-#Depending on how "clean " your data is and the purpose of your application,you may want to narrow your match down a bit.
-
-X-Sieve: CMU Sieve 2.3 
-X-DSPAM-Result: Innocent
-X-DSPAM-Confidence: 0.8475
-X-Content-Type-Message-Body: text/plain
