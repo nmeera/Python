@@ -2,14 +2,12 @@
 import urllib
 from BeautifulSoup import *
 
-url = raw_input('Enter URL: ')
-html = urllib.urlopen(url).read()
-
-soup = BeautifulSoup(html)
-
-# Retrieve all of the anchor tags
-tags = soup('a')
-
+#url = raw_input('Enter URL: ')
+#url = "http://python-data.dr-chuck.net/known_by_Fikret.html"
+url  = "http://python-data.dr-chuck.net/known_by_Kearney.html"
+#html = urllib.urlopen(url).read()
+#soup = BeautifulSoup(html)
+#tags = soup('a') # Retrieve all of the anchor tags
 #for tag in tags:
  #      #Look at the parts of tag
 #	print 'TAG: ',tag
@@ -19,11 +17,20 @@ tags = soup('a')
 #	print "\n\n"
 p = raw_input("Enter the position: ")
 r = raw_input("How many time it should repate:  ") 
-c = 0
-for tag in tags:
-	c = c + 1
-	if c == int(r): break
-	if c == int(p) :
-		x = tag.get('href', None) #;print x
-		y = tag.contents[0] #;print y
-print x, y
+k = 0
+while True:
+	html = urllib.urlopen(url).read()
+	soup = BeautifulSoup(html)
+	tags = soup('a') # Retrieve all of the anchor tags
+	k = k + 1
+#	if k >= int(r): print "CALLING BREAK>>!!  "; break
+	c = 0
+	for tag in tags:
+		c = c + 1
+		if c == int(p) :
+			url = tag.get('href', None) ;print url
+			y = tag.contents[0] ;print y
+	print k,c,int(r)
+	if k >= int(r): print "CALLING BREAK>>!!  "; break
+print url , y
+
