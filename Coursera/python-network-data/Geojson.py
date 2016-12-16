@@ -2,8 +2,8 @@
 import urllib
 import json
 
-# serviceurl = 'http://maps.googleapis.com/maps/api/geocode/json?'
-serviceurl = 'http://python-data.dr-chuck.net/geojson?'
+serviceurl = 'http://maps.googleapis.com/maps/api/geocode/json?'
+#serviceurl = 'http://python-data.dr-chuck.net/geojson?'
 
 while True:
     address = raw_input('Enter location: ')
